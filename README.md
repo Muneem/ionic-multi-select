@@ -1,26 +1,29 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# ionic-multi-select
+Ionic dropdown with multiple options.
+It will create dropdown with checkbox options. 
 
-## How to use this template
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+# Getting Started
+1) npm install
+2) add <dropdown></dropdown> where you want to use it.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+# Input Methods
+1) dropDownOptions
+Options to be shown in dropdown
+Format: 
+[{key:"value"},{key:"value"}]
 
-### With the Ionic CLI:
+2) select
+Weather you want to show select All option or not
+Default: false
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+3) searchBar
+Weather you want to show search bar or not
+Default: false
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+4) placeholder
+Place holder Text to be shown 
+Default: Select Option
 
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+# Contributing
+Thank you for your interest. ALl of you are welcome to contribute in this repo.
