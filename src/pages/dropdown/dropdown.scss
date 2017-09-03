@@ -1,0 +1,34 @@
+dropdown
+{
+
+  .heading {
+    h4 {
+      font-family: Ubuntu-R, sans-serif;
+    }
+    p {
+      color: #31708f;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  .blue {
+    color: #009cde;
+  }
+  .selectBox {
+    .selected-value
+    {
+      border: 1px solid #0099df;
+      background-color: #eae6e6;
+      padding: 10px;
+    }
+    ion-list {
+      border: 1px solid;
+    }
+    ion-icon
+    {
+      float: right;
+      color: #0099df
+    }
+  }
+}

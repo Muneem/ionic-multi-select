@@ -1,9 +1,8 @@
 {
-  "name": "dropdown",
+  "name": "MultiSelect",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
+  "author": "Muneem habib ",
+  "email": "muneemhabib@gmail.com",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -34,5 +33,5 @@
     "@ionic/app-scripts": "2.1.4",
     "typescript": "2.3.4"
   },
-  "description": "An Ionic project"
+  "description": "Dropdown with Multiselect Options"
 }
