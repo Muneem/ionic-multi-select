@@ -1,0 +1,29 @@
+<!-- Generated template for the DropdownComponent component -->
+
+<!-- Custom Select Box with search options -->
+<div class="selectBox">
+  <div class="selected-value" style="border: 1px solid;" tappable (click)="showOptions()">
+    <span>{{selectedOptions}}</span>
+    <ion-icon name="arrow-dropdown-circle" *ngIf="!options"></ion-icon>
+    <ion-icon name="arrow-dropup-circle" *ngIf="options"></ion-icon>
+  </div>
+  <!-- Show Selected Optyion or placeholder-->
+  <div class="selected-option">
+    <div class="options" *ngIf="options">
+      <ion-list>
+        <ion-searchbar *ngIf="searchBar" (ionInput)="filterItems($event)"></ion-searchbar>
+        <ion-item *ngIf="select">
+          <ion-label>Select All</ion-label>
+          <ion-checkbox [(ngModel)]="selectAll" (click)="clickCalled()"
+                        (ionChange)="checkAll($event)"></ion-checkbox>
+        </ion-item>
+        <ion-item *ngFor="let item of items">
+          <ion-label>{{item.key}}</ion-label>
+          <ion-checkbox [checked]="item.checked" (click)="itemClicked()"
+                        (ionChange)="itemChanged(item,$event)"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</div>
+
